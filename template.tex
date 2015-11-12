@@ -1,0 +1,155 @@
+%formatacao do documento e tipo do documento
+\documentclass[12pt, a4paper, twoside]{report} %inicio do doc
+
+%pacotes de extensoes
+\usepackage[portuges]{babel} %pkg da lingua portugues
+\usepackage[latin1,utf8]{inputenc} %pkg da lingua portugues
+\usepackage{verbatim} %pkg para escrever sem formataçao
+\usepackage{color} %usar cores nas letras
+\usepackage{graphicx} %usar imagens no doc
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{makeidx}
+\usepackage{anysize} % para formatar o tamanho do documento
+
+
+\marginsize{3.17cm}{3.17cm}{2.54cm}{2.54cm}
+
+%fazer indice
+\makeindex
+
+\begin{document}
+
+\title{%
+	\textbf{Planeamento e Gestão de Projecto}\\ 
+	\large Relatório Fase 2
+}
+
+\author{%
+Alexandre Machado, nº 43551 \\
+Nuno Silva, nº 44285 \\
+Francisco Pires, nº 44314 \\
+}
+
+\date{\today}
+\maketitle
+\tableofcontents
+
+\chapter{Introdução}
+
+Este projecto tem como objectivo o desenvolvimento e a implementação de um Sistema de Informação (SI), dirigido aos utentes do Serviço Nacional de Saúde (SNS). Este SI é baseado nas tecnologias Web e pretende melhorar a qualidade dos serviços prestados ao utilizador. Após a consulta do Portal da Saúde, e a identificação das capacidades existentes, propomos ampliar os requisitos funcionais disponíveis para o utilizador e melhorar os requisitos não funcionais. Para isso, pretendemos assegurar a melhor disponibilidade, correcção e confidencialidade dos dados registados.
+
+\chapter{Análise de requisitos}
+
+\section{Requisitos funcionais e não funcionais}
+
+\subsection{Requisitos funcionais}
+
+De acordo com os objectivos definidos para este projecto, seleccionamos as seguintes funcionalidades que o utilizador terá disponíveis neste SI.
+
+\begin{itemize}
+\item Registo de contactos e dados pessoais
+\item Definir agregado familiar 
+\item Identificação de cuidador familiar
+\item Registo de informação pessoal relevante
+\item Registo de indicadores básicos de saúde
+\item Registo de exames complementares de diagnóstico
+\item Consulta de registos clínicos
+\item Pedido de prescrição de medicação crónica
+\item Marcação de consultas
+\item Inscrição e consulta das listas para cirurgia (eSIGIC)
+\item Testamento vital
+\item Definir estado no Registo Nacional de Não Dadores (RENNDA)
+\item Pesquisa de serviços médicos (directório)
+\item Pedido de mudança de médico de família
+\item Pedido de isenção de taxas moderadoras
+
+\end{itemize}
+
+\subsection{Requisitos não funcionais}
+
+Para execução das funcionalidades neste SI, será necessário assegurar os requisitos não funcionais que listamos de seguida.
+
+\begin{itemize}
+\item Confidencialidade dos dados
+\item Segurança dos dados e dos acessos
+\item Garantia de disponibilidade
+\item Escalável e modular
+\item Tempo de resposta
+\item Assegurar o cumprimentos das normas legais
+\item Resolução de conflitos
+\item Persistência e sincronização dos dados
+\item Notificações e alertas de acontecimentos do utilizador
+\item \textit {Responsive Web Design}
+\end{itemize}
+
+\section{Modelo de Casos de Uso}
+
+\section{Esboços de Interfaces}
+
+\section{Modelo de Dados e Requisitos Detalhados}
+
+\chapter{Planeamento}
+
+\section{Recursos}
+
+\section{Estimação}
+
+Aqui esta um exemplo de uma tabela.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+%\rowcolor[HTML]{9B9B9B}
+{Nome} & {Descrição} & {Disponibilidade} (1ºSemestre) & {Moto X}\\ \hline
+{Alexandre Machado} & Dual Core 1.2 & Quad Core 1.4 & Hexa Core 1.8\\ \hline
+{RAM} & 512MB & 1GB & 3GB\\ \hline
+{ROM} & 4G & 8GB/16GB & 32GB/64GB\\ \hline
+\end{tabular} \\
+\caption{Modelos de smartphones.}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+%\rowcolor[HTML]{9B9B9B}
+& {Linhas} & {Moto G} & {Moto X}\\ \hline
+{Criar a Base de Dados} & 1000 & Quad Core 1.4 & Hexa Core 1.8\\ \hline
+{Configurar HTTP Server} & 512MB & 1GB & 3GB\\ \hline
+{Sistema Distribuido} & 4G & 8GB/16GB & 32GB/64GB\\ \hline
+{Segurança} & stuff & stuff & stuff \\ \hline
+{Views} & stuff & stuff & stuff \\ \hline
+{Controlador} & stuff & stuff & stuff \\ \hline
+{Modelo} & stuff & stuff & stuff \\ \hline
+\end{tabular} \\
+\caption{Decomposição Projecto}
+\end{table}
+
+\subsection{Esforço disponível}
+
+\subsection{Linhas de código}
+
+\subsection{Modelos Empíricos}
+
+\section{Processo de Desenvolvimento de Software}
+
+\section{Planeamento do Projecto}
+
+\section{Gestão de Riscos}
+
+\chapter{Arquitectura}
+
+\section{Arquitectura do Sistema}
+
+\chapter{Conclusão}
+
+Perante o projecto que nos foi proposto, definimos os Requisitos Funcionais e Não Funcionais como pilares da nossa proposta de trabalho. Através de uma pesquisa do Website do Portal do Utente e um conjunto de boas práticas de serviços Web, adicionamos funcionalidades possíveis de implementar no SI, e que determinam uma melhoria, tanto no serviço, como na interacção com o utilizador.
+
+\chapter{Bibliografia}
+
+\begin{thebiblography} {99}
+
+\bibitem 
+
+\end{document}
