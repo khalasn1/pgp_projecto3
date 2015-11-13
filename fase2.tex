@@ -1,7 +1,7 @@
-%formatacao do documento e tipo do documento
+%formatação do documento e tipo do documento
 \documentclass[12pt, a4paper, twoside]{report} %inicio do doc
 
-%pacotes de extensoes
+%pacotes de extensões
 \usepackage[portuges]{babel} %pkg da lingua portugues
 \usepackage[latin1,utf8]{inputenc} %pkg da lingua portugues
 \usepackage{verbatim} %pkg para escrever sem formataçao
@@ -10,11 +10,12 @@
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{makeidx}
 \usepackage{anysize} % para formatar o tamanho do documento
+\usepackage{multirow}
 
 
 \marginsize{3.17cm}{3.17cm}{2.54cm}{2.54cm}
 
-%fazer indice
+%fazer índice
 \makeindex
 
 \begin{document}
@@ -36,7 +37,13 @@ Francisco Pires, nº 44314 \\
 
 \chapter{Introdução}
 
-Este projecto tem como objectivo o desenvolvimento e a implementação de um Sistema de Informação (SI), dirigido aos utentes do Serviço Nacional de Saúde (SNS). Este SI é baseado nas tecnologias Web e pretende melhorar a qualidade dos serviços prestados ao utilizador. Após a consulta do Portal da Saúde, e a identificação das capacidades existentes, propomos ampliar os requisitos funcionais disponíveis para o utilizador e melhorar os requisitos não funcionais. Para isso, pretendemos assegurar a melhor disponibilidade, correcção e confidencialidade dos dados registados.
+\textit{Foram feitas alterações nas partes entregues na primeira fase.} \\
+
+
+Este projecto tem como objectivo o desenvolvimento e a implementação de um Sistema de Informação (SI), dirigido aos utentes do Serviço Nacional de Saúde (SNS). 
+Este SI é baseado em tecnologias \textit{web} e pretende melhorar a qualidade dos serviços prestados ao utilizador. 
+Após a consulta do Portal da Saúde, e a identificação das capacidades existentes, propomos ampliar os requisitos funcionais disponíveis para o utilizador e melhorar os requisitos não funcionais. 
+Para isso, pretendemos assegurar a melhor disponibilidade dos servidores, correcções na interface do \textit{website} e confidencialidade dos dados associados ao utilizador.
 
 \chapter{Análise de requisitos}
 
@@ -44,9 +51,10 @@ Este projecto tem como objectivo o desenvolvimento e a implementação de um Sis
 
 \subsection{Requisitos funcionais}
 
-De acordo com os objectivos definidos para este projecto, seleccionamos as seguintes funcionalidades que o utilizador terá disponíveis neste SI.
+De acordo com os objectivos definidos para este projecto, selecionamos as seguintes funcionalidades que o utilizador terá disponíveis neste SI.
 
 \begin{itemize}
+
 \item Registo de contactos e dados pessoais
 \item Definir agregado familiar 
 \item Identificação de cuidador familiar
@@ -72,7 +80,7 @@ Para execução das funcionalidades neste SI, será necessário assegurar os req
 \begin{itemize}
 \item Confidencialidade dos dados
 \item Segurança dos dados e dos acessos
-\item Garantia de disponibilidade
+\item Garantia de disponibilidad
 \item Escalável e modular
 \item Tempo de resposta
 \item Assegurar o cumprimentos das normas legais
@@ -92,43 +100,91 @@ Para execução das funcionalidades neste SI, será necessário assegurar os req
 
 \section{Recursos}
 
+\textbf{Recursos Humanos}
+\\
+
+Os recursos humanos para o projecto incluem seis alunos de Tecnologias de Informação (LTI), sendo que os três alunos não presentes neste planeamento são do grupo 003.
+Ao fim da cadeira de Planeamento e Gestão do Projecto(PGP), os dois grupos vão-se juntar e trabalhar em conjunto nas cadeiras de Projecto Tecnologias de Informação(PTI) e Projecto Tecnologias de Redes(PTR). A duração do projecto vai ser de três meses e meio, mais 3 meses e meio de planeamento. 
+\\
+\\
+\textbf{Disponibilidade}
+\\
+
+A disponibilidade dos alunos é conforme apresentada na seguinte tabela:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\multirow{2}{*}{} & \multicolumn{2}{c|}{Disponibilidade} \\ \cline{2-3} 
+                  & 1ºSemestre        & 2ºSemestre       \\ \hline
+Pedro Neves       & 20\%              & 40\%             \\ \hline
+Rita Capela       & 20\%              & 28,6\%           \\ \hline
+Tiago Maurício    & 20\%              & 28,6\%           \\ \hline
+Francisco Pires   & 20\%              & 33,3\%           \\ \hline
+Alexandre Machado & 20\%              & 28,6\%           \\ \hline
+Nuno Silva        & 10\%              & *                \\ \hline
+\end{tabular}
+\caption{Tabela de Disponibilidade}
+\label{disponibilidade}
+\end{table}
+
+
+Para esta tabela foram previstas todas as cadeiras que compõem o projecto, separadas por dois semestres. 
+\\
+\\
+\\
+\textbf{Organização}
+\\
+\\
+A organização dos membros envolvidos vai ser feita em três grupos.
+Um grupo para PTR, um para PTI, e um ultimo grupo para os \textit {elementos moveis}. 
+Estes alunos vão contribuir em conjunto para o trabalho de ambas as cadeiras, e ao mesmo tempo, gerir o funcionamento e as decisões de ambos os grupos.
+Esta decisão foi tomada pois estes dois membros tem competências equivalentes em PTI e PTR, e o acrescento de serem mais competentes em matérias de gestão.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|c|c|c|c|c|}
+\hline
+                  & PHP & Java & HTML & CSS & Python & Interface & Gestão \\ \hline
+Pedro Neves       & 3   & 4    & 3    & 2   & 4      & 1         & 3      \\ \hline
+Rita Capela       & 3   & 2    & 4    & 4   & 3      & 4         & 4      \\ \hline
+Tiago Maurício    & 3   & 4    & 4    & 3   & 4      & 2         & 3      \\ \hline
+Francisco Pires   & 2   & 3    & 4    & 3   & 4      & 3         & 3      \\ \hline
+Alexandre Machado & 2   & 4    & 4    & 4   & 4      & 3         & 3      \\ \hline
+Nuno Silva        & 2   & 4    & 4    & 4   & 4      & 3         & 3      \\ \hline
+\end{tabular}
+\caption{Tabela de Competências}
+\label{competencias}
+\end{table}
+
+
 \section{Estimação}
 
-Aqui esta um exemplo de uma tabela.
-
-\begin{table}[h]
-\centering
-\begin{tabular}{|l|l|l|l|}
-\hline
-%\rowcolor[HTML]{9B9B9B}
-{Nome} & {Descrição} & {Disponibilidade} (1ºSemestre) & {Moto X}\\ \hline
-{Alexandre Machado} & Dual Core 1.2 & Quad Core 1.4 & Hexa Core 1.8\\ \hline
-{RAM} & 512MB & 1GB & 3GB\\ \hline
-{ROM} & 4G & 8GB/16GB & 32GB/64GB\\ \hline
-\end{tabular} \\
-\caption{Modelos de smartphones.}
-\end{table}
-
-\begin{table}[h]
-\centering
-\begin{tabular}{|l|l|l|l|}
-\hline
-%\rowcolor[HTML]{9B9B9B}
-& {Linhas} & {Moto G} & {Moto X}\\ \hline
-{Criar a Base de Dados} & 1000 & Quad Core 1.4 & Hexa Core 1.8\\ \hline
-{Configurar HTTP Server} & 512MB & 1GB & 3GB\\ \hline
-{Sistema Distribuido} & 4G & 8GB/16GB & 32GB/64GB\\ \hline
-{Segurança} & stuff & stuff & stuff \\ \hline
-{Views} & stuff & stuff & stuff \\ \hline
-{Controlador} & stuff & stuff & stuff \\ \hline
-{Modelo} & stuff & stuff & stuff \\ \hline
-\end{tabular} \\
-\caption{Decomposição Projecto}
-\end{table}
 
 \subsection{Esforço disponível}
 
+
 \subsection{Linhas de código}
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+                       & Optimista & Provável & Pessimista & Final \\ \hline
+Criar a Base de Dados  & 50        & 120      & 200        & 123   \\ \hline
+Configurar HTTP Server & 5         & 20       & 50         & 25    \\ \hline
+Sistema Distribuído    & 2000      & 3750     & 5000       & 3583  \\ \hline
+Segurança              & 250       & 500      & 700        & 483   \\ \hline
+Views                  & 200       & 300      & 350        & 283   \\ \hline
+Controlador 		   & 5         & 10       & 20         & 12    \\ \hline
+Modelo                 & 500       & 750      & 1000       & 750   \\ \hline
+*                      & 200       & 300      & 500        & 333   \\ \hline
+\end{tabular}
+\caption{Linhas de Código}
+\label{codigo}
+\end{table}
 
 \subsection{Modelos Empíricos}
 
@@ -144,12 +200,11 @@ Aqui esta um exemplo de uma tabela.
 
 \chapter{Conclusão}
 
-Perante o projecto que nos foi proposto, definimos os Requisitos Funcionais e Não Funcionais como pilares da nossa proposta de trabalho. Através de uma pesquisa do Website do Portal do Utente e um conjunto de boas práticas de serviços Web, adicionamos funcionalidades possíveis de implementar no SI, e que determinam uma melhoria, tanto no serviço, como na interacção com o utilizador.
+Perante o projecto que nos foi proposto, definimos os requisitos funcionais e não funcionais como pilares da nossa proposta de trabalho. 
+Através de uma pesquisa ao \textit {website} do Portal do Utente e um conjunto de boas práticas de serviços \textit {web}, adicionamos funcionalidades possíveis de implementar no SI, e que determinam uma melhoria, tanto no serviço, como na interacção com o utilizador.
 
 \chapter{Bibliografia}
 
-\begin{thebiblography} {99}
-
-\bibitem 
+%\begin{thebiblography} {99}
 
 \end{document}
