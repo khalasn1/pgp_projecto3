@@ -11,7 +11,7 @@
 \usepackage{makeidx}
 \usepackage{anysize} % para formatar o tamanho do documento
 \usepackage{multirow}
-
+\usepackage{mathtools}
 
 \marginsize{3.17cm}{3.17cm}{2.54cm}{2.54cm}
 
@@ -108,7 +108,7 @@ A disponibilidade dos alunos é conforme apresentada na seguinte tabela:
 
 \begin{table}[h]
 \centering
-\begin{tabular}{|l|c|c|}
+\begin{tabular}{|l|c c|}
 \hline
 \multirow{2}{*}{} & \multicolumn{2}{c|}{Disponibilidade} \\ \cline{2-3} 
                   & 1ºSemestre        & 2ºSemestre       \\ \hline
@@ -156,7 +156,7 @@ A decisão de fazer três grupos surgiu em resposta a ter dois membros com compe
 
 \begin{table}[h]
 \centering
-\begin{tabular}{|l|c|c|c|c|c|c|c|}
+\begin{tabular}{|l|c c c c c c c|}
 \hline
                   & PHP & Java & HTML & CSS & Python & Interface & Gestão \\ \hline
 Pedro Neves       & 3   & 4    & 3    & 2   & 4      & 1         & 4      \\ \hline
@@ -178,14 +178,14 @@ Dados históricos
 
 \begin{table}[h]
 \centering
-\begin{tabular}{|l|l|l|l|l|l|}
+\begin{tabular}{|l|c c c c c|}
 \hline
                   & AD        & ASW       & ITW     & ADS     & SO      \\ \hline
 Alexandre Machado & 1002/160h & 2576/160h & 756/72h & 454/18h & 560/42h \\ \hline
 Francisco Pires   & 1002/160h & NA        & 687/5h  & NA      & 775/50h \\ \hline
 Nuno Silva        & 942/150h  & NA        & 542/10h & 500/35h & 700/60h\\ \hline
 \end{tabular}
-\caption{ Dados Históricos (\textit{Lines of Code} e Horas).}
+\caption{ Dados Históricos (\textit{Lines of Code} e horas).}
 \label{my-label}
 \end{table}
 
@@ -197,7 +197,7 @@ bla bla bla bla bla bla bla bla bla bla bla bla yo mama bla bla bla bla bla bla 
 
 \begin{table}[h]
 \centering
-\begin{tabular}{|l|c|c|c|c|}
+\begin{tabular}{|l|c c c c|}
 \hline
                        		& Optimista & Provável & Pessimista & Final \\ \hline
 Criar a Base de Dados  		& 50        & 120      & 200        & 123   \\ \hline
@@ -208,7 +208,7 @@ Sistema Distribuído         & 2000      & 3750     & 5000       & 3583   \\ \hl
 \textit{Views}            	& 1000      & 1500     & 2500       & 1600  \\ \hline
 Controlador                 & 500       & 750      & 1000       & 750   \\ \hline
 Modelo                      & 200       & 300      & 500        & 333   \\ \hline
-\textbf{Total}		   		& 3210      & 5750     & 8520       & 5827  \\ \hline
+\textbf{Total}		   		& 3960      & 6750     & 9620       & 6777  \\ \hline
 \end{tabular}
 \caption{Linhas de Código}
 \label{codigo}
@@ -221,6 +221,12 @@ Modelo                      & 200       & 300      & 500        & 333   \\ \hlin
 \section{Planeamento do Projecto}
 
 \section{Gestão de Riscos}
+
+Calculo do esforço orgânico:
+\\
+\begin{equation}Esforço = 2,4 ({N.Linhas \over 1000})^{1.05}\end{equation}
+\\
+outras cenas
 
 \chapter{Conclusão}
 
