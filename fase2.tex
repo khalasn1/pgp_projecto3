@@ -13,6 +13,7 @@
 \usepackage{multirow}
 \usepackage{mathtools}
 \usepackage{wrapfig}
+\usepackage{footnote}
 
 \marginsize{3.17cm}{3.17cm}{2.54cm}{2.54cm}
 
@@ -36,6 +37,8 @@ Francisco Pires, nº 44314 \\
 \maketitle
 \tableofcontents
 
+%--------------------------------------------------------------------------------------------- Feito
+
 \chapter{Introdução}
 
 \textit{Foram feitas alterações nas partes entregues na primeira fase.} \\
@@ -45,6 +48,8 @@ Este projecto tem como objectivo o desenvolvimento e a implementação de um Sis
 Este SI é baseado em tecnologias \textit{web} e pretende melhorar a qualidade dos serviços prestados ao utilizador. 
 Após a consulta do Portal da Saúde, e a identificação das capacidades existentes, propomos ampliar os requisitos funcionais disponíveis para o utilizador e melhorar os requisitos não funcionais. 
 Para isso, pretendemos assegurar a melhor disponibilidade dos servidores, correcções na interface do \textit{website} e confidencialidade dos dados associados ao utilizador.
+
+%--------------------------------------------------------------------------------------------- Feito
 
 \chapter{Análise de requisitos}
 
@@ -74,6 +79,8 @@ De acordo com os objectivos definidos para este projecto, selecionamos as seguin
 
 \end{itemize}
 
+%--------------------------------------------------------------------------------------------- Feito
+
 \subsection{Requisitos não funcionais}
 
 Para execução das funcionalidades neste SI, será necessário assegurar os requisitos não funcionais que listamos de seguida.
@@ -90,6 +97,8 @@ Para execução das funcionalidades neste SI, será necessário assegurar os req
 \item Notificações e alertas de acontecimentos do utilizador
 \item \textit {Responsive Web Design}
 \end{itemize}
+
+%--------------------------------------------------------------------------------------------- Feito
 
 \chapter{Planeamento}
 
@@ -112,20 +121,23 @@ A disponibilidade dos alunos é conforme apresentada na seguinte tabela:
 \begin{tabular}{|l|c c|}
 \hline
 \multirow{2}{*}{} & \multicolumn{2}{c|}{Disponibilidade} \\ \cline{2-3} 
-                  & 1ºSemestre        & 2ºSemestre       \\ \hline
-Pedro Neves       & 20\%              & 40\%             \\ \hline
-Rita Capela       & 20\%              & 28,6\%           \\ \hline
-Tiago Maurício    & 20\%              & 28,6\%           \\ \hline
-Francisco Pires   & 20\%              & 33,3\%           \\ \hline
-Alexandre Machado & 20\%              & 28,6\%           \\ \hline
-Nuno Silva        & 10\%              & *                \\ \hline
+                  		& 1ºSemestre        & 2ºSemestre       \\ \hline
+Pedro Neves       		& 20\%              & 40\%             \\ \hline
+Rita Capela       		& 20\%              & 28,6\%           \\ \hline
+Tiago Maurício    		& 20\%              & 28,6\%           \\ \hline
+Francisco Pires   		& 20\%              & 33,3\%           \\ \hline
+Alexandre Machado 		& 20\%              & 28,6\%           \\ \hline
+Nuno Silva\footnotemark	& 10\%              & *                \\ \hline
 \end{tabular}
 \caption{Tabela de Disponibilidade}
 \label{disponibilidade}
 \end{table}
 
-Para esta tabela foram previstas todas as cadeiras que compõem o projecto, separadas por dois semestres. 
+\footnotetext{ O aluno em questão encontra-se a trabalhar em \textit{part-time}, pelo que no primeiro semestre tem menos disponibilidade. Não sendo possível prever, por agora, a sua disponibilidade no segundo semestre, foi decidido não ser calculada.}
+
 \clearpage
+
+%---------------------------------------------------------------------------------------------
 
 \noindent{\textbf{Organização da equipa}}
 \\
@@ -173,6 +185,8 @@ Nuno Silva        & 2   & 4    & 4    & 4   & 4      & 3         & 3      \\ \hl
 
 \clearpage
 
+%---------------------------------------------------------------------------------------------
+
 \section{Estimação}
 
 Dados históricos
@@ -212,8 +226,9 @@ E = 1,1 \ . \ 3,5 = 3,85 \ PM
 
 \subsection{Linhas de código}
 
-texto aqui 
+As Linhas de código previstas para o projecto são conforme apresentadas na seguinte tabela:
 
+\begin{savenotes}
 \begin{table}[h]
 \centering
 \begin{tabular}{|l|c c c c|}
@@ -221,9 +236,10 @@ texto aqui
                        					& Optimista & Provável & Pessimista & \textbf{Final} \\ \hline
 Criar a Base de Dados  					& 50        & 120      & 200        & 123   		 \\ \hline
 Configurar \textit{HTTP Server} 		& 5         & 20       & 50         & 25    		 \\ \hline
-Ligação à Base de Dados^1				& 5         & 10       & 20         & 12    		 \\ \hline
+Ligação à Base de Dados\footnote{Linhas a não serem consideradas usando a linguagem \textit{Java}.}	
+										& 5         & 10       & 20         & 12    		 \\ \hline
 Segurança              					& 200       & 300      & 350        & 283   		 \\ \hline
-Sistema Distribuído^2	      			& 2000      & 3750     & 5000       & 3583   		 \\ \hline
+Sistema Distribuído\footnotemark	    & 2000      & 3750     & 5000       & 3583   		 \\ \hline
 \textit{Views}            				& 1000      & 1500     & 2500       & 1600  		 \\ \hline
 Controlador                 			& 500       & 750      & 1000       & 750   		 \\ \hline
 Modelo                      			& 200       & 300      & 500        & 333   		 \\ \hline
@@ -231,7 +247,12 @@ Modelo                      			& 200       & 300      & 500        & 333   		 \\
 \end{tabular}
 \caption{Linhas de Código}
 \label{codigo}
-\end{table}
+\end{table}%
+\end{savenotes}
+
+\footnotetext{Considera-se por SD a programação integral de um Sistema Distribuído. Caso se use um serviço que somente precise de configuração (p.ex. \textit{Amazon Web Services}), estas linhas devem ser alteradas.}
+
+%---------------------------------------------------------------------------------------------
 
 \subsection{Modelos Empíricos}
 
@@ -251,26 +272,47 @@ D = c \ . \ E^d
 \end{equation}
 
 \begin{equation}
-D& = 2,5 \ (17,89)^{0,38}= 7,48\ M
+D = 2,5 \ (17,89)^{0,38}= 7,48\ M
 \end{equation}
-
+\\
 \section{Processo de Desenvolvimento de Software}
 
 Como processo de desenvolvimento do nosso projeto decidimos usar o Processo Unificado.
 Esta decisão foi baseada numa reflexão da nossa parte, em que, pensámos na forma como trabalhamos e, visto que este projeto não é de forma alguma \textit{full-time}, tivemos de ter isso em conta. O Processo Unificado permite-nos avançar iterativamente e ao mesmo tempo voltar a trás sem que hajam muitos problemas, havendo assim um balanço entre o avançar no projeto e ajustar problemas anteriores, o que achamos que seria perfeito no nosso caso.
 \\
 \\
+\\
+%\includegraphics[scale=0.6]{image1.png}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.6\textwidth]{image1.png}
+   \caption{Exemplo de um Processo Unificado}
+\end{figure}
+
+\clearpage
+
 \textbf{O Processo Unificado divide-se em quarto fases:}
+
+
 \begin{itemize}
 \item \textit{Inception} – justifica-se a execução do projeto, ou seja, tenta-se adquirir um conhecimento do que irá ser preciso para concluir o projeto e quando concluído, os resultados deste.
+
 \item \textit{Elaboration} – conclui-se de certa forma a fase de \textit{inception}, visitando com mais detalhe todos os fatores de risco, \textit{reward} e recursos que este irá trazer. Convém ser o mais completo e detalhado possível visto que na fase seguinte vai proceder-se à construção do projecto.
+
 \item \textit{Construction} – começa-se a construção do que irá ser uma versão operacional do projeto. O foco principal nesta fase é a construção de features discutidas anteriormente. É de valor notar que em projetos de maior dimensão esta fase poderá ter varias iterações.
+
 \item \textit{Transition} – o foco nesta fase será transitar o projeto de um ambiente de desenvolvimento para um ambiente de produção, pondo o produto disponível ao cliente final, para que este o perceba e o use. Nesta fase faz-se o treino do cliente final e o beta testing para validar o projeto em relação às expectativas do cliente final. De seguida compara-se o estado do projeto nesta fase à fase de Inception e se tudo estiver bem, faz-se uma \textit{release}.
+
 \end{itemize}
-\begin{wrapfigure}{r}{10cm}
-\caption{A wrapped figure going nicely inside the text.}\label{wrap-fig:1}
-\includegraphics[width=10cm]{image1.png}
-\end{wrapfigure} 
+
+%\begin{wrapfigure}{r}{7.5cm}
+%\caption{1}\label{wrap-fig:1}
+%\includegraphics[width=7.5cm]{image1.png}
+%\end{wrapfigure} 
+
+%---------------------------------------------------------------------------------------------
+
 \textbf{Vantagens do Processo Unificado:}
 \begin{itemize}
 \item O cliente não precisa de esperar muito tempo para entrar em contacto com um resultado prático.
@@ -282,6 +324,10 @@ Esta decisão foi baseada numa reflexão da nossa parte, em que, pensámos na fo
 \item Poderá haver desorganização em períodos mais avançados no projeto.
 \item Aumento de gastos em implementações de varias versões do projetos.
 \end{itemize}
+
+%---------------------------------------------------------------------------------------------
+
+\clearpage
 
 \section{Planeamento do Projecto}
 
@@ -295,10 +341,14 @@ Calculo do esforço orgânico:
 
 outras cenas
 
+%---------------------------------------------------------------------------------------------
+
 \chapter{Conclusão}
 
 Perante o projecto que nos foi proposto, definimos os requisitos funcionais e não funcionais como pilares da nossa proposta de trabalho. 
 Através de uma pesquisa ao \textit {website} do Portal do Utente e um conjunto de boas práticas de serviços \textit {web}, adicionamos funcionalidades possíveis de implementar no SI, e que determinam uma melhoria, tanto no serviço, como na interacção com o utilizador.
+
+%---------------------------------------------------------------------------------------------
 
 \chapter{Bibliografia}
 
