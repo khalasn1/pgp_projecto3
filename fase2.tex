@@ -12,6 +12,7 @@
 \usepackage{anysize} % para formatar o tamanho do documento
 \usepackage{multirow}
 \usepackage{mathtools}
+\usepackage{wrapfig}
 
 \marginsize{3.17cm}{3.17cm}{2.54cm}{2.54cm}
 
@@ -80,7 +81,7 @@ Para execução das funcionalidades neste SI, será necessário assegurar os req
 \begin{itemize}
 \item Confidencialidade dos dados
 \item Segurança dos dados e dos acessos
-\item Garantia de disponibilidad
+\item Garantia de disponibilidade
 \item Escalável e modular
 \item Tempo de resposta
 \item Assegurar o cumprimentos das normas legais
@@ -97,8 +98,8 @@ Para execução das funcionalidades neste SI, será necessário assegurar os req
 \textbf{Recursos Humanos}
 \\
 
-Os recursos humanos para o projecto incluem seis alunos de Tecnologias de Informação (LTI), sendo os restantes alunos são do grupo 003.
-Ao fim da cadeira de Planeamento e Gestão do Projecto (PGP), os dois grupos vão-se juntar e trabalhar em conjunto nas cadeiras de Projecto Tecnologias de Informação (PTI) e Projecto Tecnologias de Redes (PTR). A duração do projecto vai ser de três meses e meio, mais 3 meses e meio de planeamento. 
+Os recursos humanos para o projecto incluem seis alunos de Tecnologias de Informação (LTI), sendo que os três alunos não presentes neste relatório pertencem ao grupo 003. 
+No final da cadeira de Planeamento e Gestão do Projecto (PGP), os dois grupos irão juntar-se e trabalhar em conjunto nas cadeiras de Projecto Tecnologias de Informação (PTI) e Projecto Tecnologias de Redes (PTR). A duração total do projecto será de sete meses, sendo três meses e meio dedicados ao planeamento (PGP).
 \\
 \\
 \textbf{Disponibilidade}
@@ -132,7 +133,7 @@ Para esta tabela foram previstas todas as cadeiras que compõem o projecto, sepa
 A organização dos membros envolvidos vai ser feita em três grupos.
 Um grupo para PTR, um para PTI, e um ultimo grupo para os \textit {"elementos moveis"}. 
 Estes alunos vão contribuir em conjunto para o trabalho de ambas as cadeiras, e ao mesmo tempo, gerir o funcionamento e as decisões dos grupos.
-A decisão de fazer três grupos surgiu em resposta a ter dois membros com competências equivalentes em PTI e PTR, e o acrescento de serem mais competentes em matérias de gestão.
+A decisão de organizar o projecto distribuído em três grupos surgiu para dar resposta ao facto de dois membros terem competências equivalentes em PTI e PTR e disponibilidade acrescida para gerir o projecto no seu conjunto.
 
 \begin{itemize}
 \item Grupo PTR
@@ -152,7 +153,7 @@ A decisão de fazer três grupos surgiu em resposta a ter dois membros com compe
 \end{itemize}
 \end{itemize}
 
-\noindent{\textbf{Tabela de Competencias}}
+\noindent{\textbf{Tabela de Competências}}
 
 \begin{table}[h]
 \centering
@@ -190,35 +191,43 @@ Nuno Silva        & 942/150h  & NA        & 542/10h & 500/35h & 700/60h\\ \hline
 \end{table}
 
 \subsection{Esforço disponível}
-\begin{center}
-1º semestre (duração: 3,5 meses)\\
-20+20+20+20+20+10 = 110 (1,1 pessoas)\\
-Esforço = 1,1 x 3,5 = 3,85 PM\\
-\\
-\\
-2º semestre (duração: 3,5 meses)\\
-40+28,6+28,6+33,3+28,6+ = 188 (1,88 pessoas)\\
-Esforço = 1,88 x 3,5 = 6, 58 PM\\
-\end{center}
+
+\begin{itemize}
+
+\item 1º semestre (duração: 3,5 meses)
+\begin{equation}
+20+20+20+20+20+10 = 110 \ (1,1 \ pessoas)
+\end{equation}
+\begin{equation}
+E = 1,1 \ . \ 3,5 = 3,85 \ PM
+\end{equation}
+\item 2º semestre (duração: 3,5 meses)
+\begin{equation}
+40+28,6+28,6+33,3+28,6 = 188 \ (1,88 \ pessoas)\\
+\end{equation}
+\begin{equation}
+\ E = 1,88 \ . \ 3,5 = 6, 58 \ PM
+\end{equation}
+\end{itemize}
 
 \subsection{Linhas de código}
 
-bla bla bla bla bla bla bla bla bla bla bla bla yo mama bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+texto aqui 
 
 \begin{table}[h]
 \centering
 \begin{tabular}{|l|c c c c|}
 \hline
-                       		& Optimista & Provável & Pessimista & Final \\ \hline
-Criar a Base de Dados  		& 50        & 120      & 200        & 123   \\ \hline
-Configurar HTTP Server 		& 5         & 20       & 50         & 25    \\ \hline
-Ligação à Base de Dados*	& 5         & 10       & 20         & 12    \\ \hline
-Segurança              		& 200       & 300      & 350        & 283   \\ \hline
-Sistema Distribuído         & 2000      & 3750     & 5000       & 3583   \\ \hline
-\textit{Views}            	& 1000      & 1500     & 2500       & 1600  \\ \hline
-Controlador                 & 500       & 750      & 1000       & 750   \\ \hline
-Modelo                      & 200       & 300      & 500        & 333   \\ \hline
-\textbf{Total}		   		& 3960      & 6750     & 9620       & 6777  \\ \hline
+                       					& Optimista & Provável & Pessimista & \textbf{Final} \\ \hline
+Criar a Base de Dados  					& 50        & 120      & 200        & 123   		 \\ \hline
+Configurar \textit{HTTP Server} 		& 5         & 20       & 50         & 25    		 \\ \hline
+Ligação à Base de Dados^1				& 5         & 10       & 20         & 12    		 \\ \hline
+Segurança              					& 200       & 300      & 350        & 283   		 \\ \hline
+Sistema Distribuído^2	      			& 2000      & 3750     & 5000       & 3583   		 \\ \hline
+\textit{Views}            				& 1000      & 1500     & 2500       & 1600  		 \\ \hline
+Controlador                 			& 500       & 750      & 1000       & 750   		 \\ \hline
+Modelo                      			& 200       & 300      & 500        & 333   		 \\ \hline
+\textbf{Total}		   					& 3960      & 6750     & 9620       & \textbf{6777}  \\ \hline
 \end{tabular}
 \caption{Linhas de Código}
 \label{codigo}
@@ -226,7 +235,53 @@ Modelo                      & 200       & 300      & 500        & 333   \\ \hlin
 
 \subsection{Modelos Empíricos}
 
+Justificação 
+
+\begin{equation}
+E = a \ . \ KLOC ^ b
+\end{equation}
+
+\begin{equation}
+{E = 2,4 \ \bigg({6777 \over 1000}\bigg) ^ {1.05}}
+= 17.89 \ P.M
+\end{equation}
+
+\begin{equation}
+D = c \ . \ E^d
+\end{equation}
+
+\begin{equation}
+D& = 2,5 \ (17,89)^{0,38}= 7,48\ M
+\end{equation}
+
 \section{Processo de Desenvolvimento de Software}
+
+Como processo de desenvolvimento do nosso projeto decidimos usar o Processo Unificado.
+Esta decisão foi baseada numa reflexão da nossa parte, em que, pensámos na forma como trabalhamos e, visto que este projeto não é de forma alguma \textit{full-time}, tivemos de ter isso em conta. O Processo Unificado permite-nos avançar iterativamente e ao mesmo tempo voltar a trás sem que hajam muitos problemas, havendo assim um balanço entre o avançar no projeto e ajustar problemas anteriores, o que achamos que seria perfeito no nosso caso.
+\\
+\\
+\textbf{O Processo Unificado divide-se em quarto fases:}
+\begin{itemize}
+\item \textit{Inception} – justifica-se a execução do projeto, ou seja, tenta-se adquirir um conhecimento do que irá ser preciso para concluir o projeto e quando concluído, os resultados deste.
+\item \textit{Elaboration} – conclui-se de certa forma a fase de \textit{inception}, visitando com mais detalhe todos os fatores de risco, \textit{reward} e recursos que este irá trazer. Convém ser o mais completo e detalhado possível visto que na fase seguinte vai proceder-se à construção do projecto.
+\item \textit{Construction} – começa-se a construção do que irá ser uma versão operacional do projeto. O foco principal nesta fase é a construção de features discutidas anteriormente. É de valor notar que em projetos de maior dimensão esta fase poderá ter varias iterações.
+\item \textit{Transition} – o foco nesta fase será transitar o projeto de um ambiente de desenvolvimento para um ambiente de produção, pondo o produto disponível ao cliente final, para que este o perceba e o use. Nesta fase faz-se o treino do cliente final e o beta testing para validar o projeto em relação às expectativas do cliente final. De seguida compara-se o estado do projeto nesta fase à fase de Inception e se tudo estiver bem, faz-se uma \textit{release}.
+\end{itemize}
+\begin{wrapfigure}{r}{10cm}
+\caption{A wrapped figure going nicely inside the text.}\label{wrap-fig:1}
+\includegraphics[width=10cm]{image1.png}
+\end{wrapfigure} 
+\textbf{Vantagens do Processo Unificado:}
+\begin{itemize}
+\item O cliente não precisa de esperar muito tempo para entrar em contacto com um resultado prático.
+\item Quando terminado o desenvolvimento do projeto é muito dificil encontrar erros dada a facilidade de os corrigir anteriormente.
+\item Os riscos de grau mais elevado são trabalhados em primeiro lugar, dando assim alguma confiança no desenvolvimento do projeto
+\end{itemize}
+\textbf{Desvantagens do Processo Unificado:}
+\begin{itemize}
+\item Poderá haver desorganização em períodos mais avançados no projeto.
+\item Aumento de gastos em implementações de varias versões do projetos.
+\end{itemize}
 
 \section{Planeamento do Projecto}
 
@@ -234,9 +289,10 @@ Modelo                      & 200       & 300      & 500        & 333   \\ \hlin
 
 Calculo do esforço orgânico:
 \\
-\begin{equation} Esforço = 2,4 ({N.Linhas \over 1000})^{1.05}
+\begin{equation} E = 2,4 \ \bigg({N.Linhas \over 1000}\bigg)^{1.05}
 \end{equation}
 \\
+
 outras cenas
 
 \chapter{Conclusão}
