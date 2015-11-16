@@ -1,0 +1,22 @@
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+Riscos                                                & Tipo             & Probabilidade & Impacto \\ \hline
+Má comunicação                                        & Recursos Humanos & Baixa         & 2       \\ \hline
+Falta de empenho                                      & Recursos Humanos & Média         & 2       \\ \hline
+Falta de conhecimento                                 & Recursos Humanos & Média         & 3       \\ \hline
+Baixa de um membro do grupo                           & Recursos Humanos & Baixa         & 2       \\ \hline
+Falta de “química” entre membros do grupo             & Recursos Humanos & Média         & 3       \\ \hline
+Atraso de prazos internos                             & Recursos Humanos & Média         & 2       \\ \hline
+Desistência de um membro do grupo                     & Recursos Humanos & Baixa         & 3       \\ \hline
+Má implementação (bugs) de uma funcionalidade         & Tecnologia       & Elevada       & 2       \\ \hline
+Updates que pioram o funcionamento de funcionalidades & Tecnologia       & Baixa         & 2       \\ \hline
+Falta de segurança na implementação                   & Tecnologia       & Elevada       & 3       \\ \hline
+Atrasos na entrega de etapas do projeto               & Desenvolvimento  & Elevada       & 1       \\ \hline
+Falta de funcionalidades na iteração final do projeto & Desenvolvimento  & Média         & 2       \\ \hline
+Requisitos incompletos                                & Desenvolvimento  & Baixa         & 1       \\ \hline
+\end{tabular}
+\caption{My caption}
+\label{my-label}
+\end{table}
