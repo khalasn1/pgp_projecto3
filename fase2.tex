@@ -13,6 +13,8 @@
 
 
 
+
+
 %formatação do documento e tipo do documento
 \documentclass[12pt, a4paper, twoside]{report} %inicio do doc
 
@@ -53,6 +55,7 @@ Francisco Pires, nº 44314 \\
 \tableofcontents
 
 %--------------------------------------------------------------------------------------------- Feito
+
 \chapter{Introdução}
 
 \textit{Foram feitas alterações nas partes entregues na primeira fase.} \\
@@ -63,7 +66,7 @@ Este SI é baseado em tecnologias \textit{web} e pretende melhorar a qualidade d
 Após a consulta do Portal da Saúde, e a identificação das capacidades existentes, propomos ampliar os requisitos funcionais disponíveis para o utilizador e melhorar os requisitos não funcionais. 
 Para isso, pretendemos assegurar a melhor disponibilidade dos servidores, correcções na interface do \textit{website} e confidencialidade dos dados associados ao utilizador.
 
-%--------------------------------------------------------------------------------------------- Refazer Introdução
+%--------------------------------------------------------------------------------------------- Feito
 
 \chapter{Análise de requisitos}
 
@@ -76,44 +79,41 @@ De acordo com os objectivos definidos para este projecto, selecionamos as seguin
 \begin{itemize}
 
 \item Registo de contactos e dados pessoais
-	\begin{itemize}
-	\item Nº Cartão de Cidadão, Nº Utente de Saúde, Nº telefone, Nº Identificação Fiscal, Email
-	\end{itemize}
+\begin{itemize}
+\item Nº do Cartão de Cidadão, Nº de Utente de Saude, Nº de telefone, NIF, Email.
+\end{itemize}
 \item Definir agregado familiar
-	\begin{itemize}
-	\item Pai, mãe, filhos, irmãos, etc...
-	\end{itemize} 
-\item Identificação de cuidador familiar 
+\begin{itemize}
+\item Pai, mãe, filhos, irmãos, etc...
+\end{itemize} 
+\item Identificação de cuidador familiar
 \item Registo de informação pessoal relevante
-	\begin{itemize}
-	\item Testamento Vital, Contados de emergência
-	\end{itemize}
+\begin{itemize}
+\item Testamento Vital, Contados de emergência
+\end{itemize}
 \item Registo de indicadores básicos de saúde
-	\begin{itemize}
-	\item Medicação, alergias, diagnósticos, cirurgias, vacinação, doenças raras
-	\end{itemize}
+\begin{itemize}
+\item Medicação, alergias, diagnósticos, cirurgias, vacinação, doenças raras
+\end{itemize}
 \item Registo de exames complementares de diagnóstico
-	\begin{itemize}
-	\item Todo o tipo de exames(documentos relevantes) que o utente faça podem ser guardados no portal pelo próprio
-	\end{itemize}
+\begin{itemize}
+\item Todo o tipo de exames(documentos relevantes) que o utente faça podem ser guardados
+\end{itemize}
 \item Consulta de registos clínicos
 \item Pedido de prescrição de medicação crónica
-	\begin{itemize}
-	\item No caso da medicação crónica, o portal pode gerar receitas automaticamente mediante as instruções do medico.
-	\end{itemize}
 \item Marcação de consultas
 \item Inscrição e consulta das listas para cirurgia (eSIGIC)
 \item Definir estado no Registo Nacional de Não Dadores (RENNDA)
 \item Pesquisa de serviços médicos (directório)
-	\begin{itemize}
-	\item Poder pesquisar serviços médicos por área
-	\end{itemize}
+\begin{itemize}
+\item Poder pesquisar serviços médicos por área
+\end{itemize}
 \item Pedido de mudança de médico de família
 \item Pedido de isenção de taxas moderadoras
 
 \end{itemize}
 
-%--------------------------------------------------------------------------------------------- Actualizado
+%--------------------------------------------------------------------------------------------- Feito
 
 \subsection{Requisitos não funcionais}
 
@@ -121,13 +121,13 @@ Para execução das funcionalidades neste SI, será necessário assegurar os req
 
 \begin{itemize}
 \item Confidencialidade dos dados
-	\begin{itemize}
-	\item Todos os dados médicos que o utente introduz na plataforma, este pode escolher que informação pode partilhar com o medico.
-	\end{itemize}
+\begin{itemize}
+\item Todos os dados médicos que o utente introduz na plataforma, este pode escolher que informação pode partilhar com o medico
+\end{itemize}
 \item Segurança dos dados e dos acessos
-	\begin{itemize}
-	\item Os dados introduzidos são salvaguardados de qualquer tipo de intrusão ou acesso não autorizado
-	\end{itemize}
+\begin{itemize}
+\item Os dados introduzidos são salvagardados de qualquer tipo de intrusão ou acesso não autorizado
+\end{itemize}
 \item Garantia de disponibilidade
 \begin{itemize}
 \item Garantir que a plataforma está sempre acessível online (24/7)
@@ -179,7 +179,7 @@ A disponibilidade dos alunos é conforme apresentada na seguinte tabela:
 \begin{tabular}{|l|c c|}
 \hline
 \multirow{2}{*}{} & \multicolumn{2}{c|}{Disponibilidade} \\ \cline{2-3} 
-						& 1ºSemestre        & 2ºSemestre       \\ \hline
+                  		& 1ºSemestre        & 2ºSemestre       \\ \hline
 Pedro Neves       		& 20\%              & 40\%             \\ \hline
 Rita Capela       		& 20\%              & 28,6\%           \\ \hline
 Tiago Maurício    		& 20\%              & 28,6\%           \\ \hline
@@ -229,7 +229,7 @@ A decisão de organizar o projecto distribuído em três grupos surgiu para dar 
 \centering
 \begin{tabular}{|l|c c c c c c c c c|}
 \hline
-				  & PHP & Java & HTML & CSS & Python & Interface & Gestão  & Design & RH\\ \hline
+                  & PHP & Java & HTML & CSS & Python & Interface & Gestão  & Design & RH\\ \hline
 Pedro Neves       & 3   & 4    & 3    & 2   & 4      & 1         & 4       & ?      & ?     \\ \hline
 Rita Capela       & 3   & 2    & 4    & 4   & 3      & 4         & 4       & ?      & ?     \\ \hline
 Tiago Maurício    & 3   & 4    & 4    & 3   & 4      & 2         & 3       & ?      & ?     \\ \hline
@@ -253,7 +253,7 @@ Para a realização da tabela relativa aos dados históricos, foram escolhidas a
 \centering
 \begin{tabular}{|l|c c c c c|}
 \hline
-				  & AD        & ASW       & ITW     & ADS     & SO      \\ \hline
+                  & AD        & ASW       & ITW     & ADS     & SO      \\ \hline
 Alexandre Machado & 1002/160h & 2576/160h & 756/72h & 454/18h & 560/42h \\ \hline
 Francisco Pires   & 1002/160h & NA        & 687/5h  & NA      & 775/50h \\ \hline
 Nuno Silva        & 942/150h  & NA        & 542/10h & 500/35h & 700/60h\\ \hline
@@ -291,7 +291,7 @@ As linhas de código previstas para o projecto são conforme apresentadas na seg
 \centering
 \begin{tabular}{|l|c c c c|}
 \hline
-										& Optimista & Provável & Pessimista & \textbf{Final} \\ \hline
+                       					& Optimista & Provável & Pessimista & \textbf{Final} \\ \hline
 Criar a Base de Dados  					& 50        & 120      & 200        & 123   		 \\ \hline
 Configurar \textit{HTTP Server} 		& 5         & 20       & 50         & 25    		 \\ \hline
 Ligação à Base de Dados \footnote{Linhas a não serem consideradas usando a linguagem \textit{Java}.}
@@ -321,8 +321,7 @@ Calculo do esforço orgânico:
 E = a \ . \ KLOC ^ b
 \end{equation}
 
-\begin{equation} 
-E = 2,4 \ \bigg({N.Linhas \over 1000}\bigg)^{1.05}
+\begin{equation} E = 2,4 \ \bigg({N.Linhas \over 1000}\bigg)^{1.05}
 \end{equation}
 
 \begin{equation}
@@ -345,10 +344,11 @@ D = 2,5 \ (17,89)^{0,38}= 7,48\ M
 Como processo de desenvolvimento do nosso projeto decidimos usar o Processo Unificado.
 Esta decisão foi baseada numa reflexão da nossa parte, em que, pensámos na forma como trabalhamos e, visto que este projeto não é de forma alguma \textit{full-time}, tivemos de ter isso em conta. O Processo Unificado permite-nos avançar iterativamente e ao mesmo tempo voltar a trás sem que hajam muitos problemas, havendo assim um balanço entre o avançar no projeto e ajustar problemas anteriores, o que achamos que seria perfeito no nosso caso.
 \\
+%\includegraphics[scale=0.6]{image1.png}
 
 \begin{figure}[h!]
   \centering
-	\includegraphics[width=0.6\textwidth]{image1.png}
+    \includegraphics[width=0.6\textwidth]{image1.png}
    \caption{Exemplo de um Processo Unificado}
 \end{figure}
 
